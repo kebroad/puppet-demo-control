@@ -1,0 +1,5 @@
+---
+profile::nginx::vhosts:
+  - 'fqdn': 'kebroad2.mylabserver.com'
+    'port': 80
+    'server_aliases': ''
