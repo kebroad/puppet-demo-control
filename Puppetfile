@@ -22,7 +22,7 @@ mod 'stahnma/epel',          '1.2.2'
 #  :git    => 'https://github.com/puppetlabs/puppetlabs-apache',
 #  :branch => 'docs_experiment'
 
-mod 'nginx'
+mod 'nginx',
   :git => 'https://github.com/kebroad/puppet-demo-nginx.git',
   :ref => 'master'
 
