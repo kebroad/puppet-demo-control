@@ -4,7 +4,6 @@ pipeline {
   stages {
     stage('Unit Tests'){
       steps {
-        sh 'ant -f test.xml -v'
         echo 'this works!!'
       }
     }
