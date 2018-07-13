@@ -5,8 +5,8 @@ node {
     //stage('Unit Tests'){
       //steps {
         checkout scm
-        echo 'this works!!'
         puppet.credentials 'pe-access-token'
+        puppet.job 'production'
         echo 'trying code deploy...'
         puppet.codeDeploy 'production'
         //echo 'code deploy works! trying puppet job!'
