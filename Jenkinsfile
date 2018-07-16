@@ -4,6 +4,7 @@ node {
   //stages {
     //stage('Unit Tests'){
       //steps {
+        checkout scm
         echo 'test1'
         puppet.credentials 'puppet-jenkins2'
         echo 'test2'
