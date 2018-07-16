@@ -8,6 +8,7 @@ node {
         echo 'test1'
         puppet.credentials 'puppet-jenkins2'
         echo 'test21'
+        puppetJob credentialsId: 'puppet-jenkins2'
         puppet.job 'production'
         echo 'trying code deploy...'
         puppet.codeDeploy 'production'
