@@ -4,8 +4,9 @@ node {
   //stages {
     //stage('Unit Tests'){
       //steps {
-        checkout scm
-        puppet.credentials 'pe-access-token'
+        echo 'test1'
+        puppet.credentials 'puppet-jenkins2'
+        echo 'test2'
         puppet.job 'production'
         echo 'trying code deploy...'
         puppet.codeDeploy 'production'
